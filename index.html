@@ -68,11 +68,9 @@
           </div>
         </div>
 
-        <div class="container">
-          <section class="products" id="productGrid" aria-label="Products Grid">
-            <!-- Rendered by JS -->
-          </section>
-        </div>
+        <section class="products" id="productGrid" aria-label="Products Grid">
+          <!-- Rendered by JS -->
+        </section>
 
         <!-- Floating Go to Cart button (visible/enabled after first add to cart) -->
         <button id="goToCartFab" class="fab" type="button" aria-label="Go to Cart" disabled>Go to Cart</button>
@@ -80,32 +78,30 @@
 
       <!-- Cart Section -->
       <section id="cart" class="section" aria-label="Cart">
-        <div class="container">
-          <div id="cartEmpty" class="muted">Your cart is empty.</div>
-          <div class="cart-table-wrap">
-            <table id="cartTable" class="cart-table" aria-describedby="cartSummary">
-              <thead>
-                <tr>
-                  <th scope="col">Item</th>
-                  <th scope="col">Qty</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Total</th>
-                  <th scope="col" class="hide-sm">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- Rows rendered by JS -->
-              </tbody>
-            </table>
+        <div id="cartEmpty" class="muted">Your cart is empty.</div>
+        <div class="cart-table-wrap">
+          <table id="cartTable" class="cart-table" aria-describedby="cartSummary">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+                <th scope="col" class="hide-sm">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+        <div class="cart-summary" id="cartSummary">
+          <div class="summary-row">
+            <strong>Grand Total: <span id="grandTotal">₹0</span></strong>
           </div>
-          <div class="cart-summary" id="cartSummary">
-            <div class="summary-row">
-              <strong>Grand Total: <span id="grandTotal">₹0</span></strong>
-            </div>
-            <div class="summary-actions">
-              <button id="printBtn" class="btn btn-accent">Print</button>
-              <button id="clearCartBtn" class="btn btn-accent" style="margin-left: 0.5rem;">Clear Cart</button>
-            </div>
+          <div class="summary-actions">
+            <button id="printBtn" class="btn btn-accent">Print</button>
+            <button id="clearCartBtn" class="btn btn-accent" style="margin-left: 0.5rem;">Clear Cart</button>
           </div>
         </div>
 

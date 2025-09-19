@@ -1,0 +1,1 @@
+- [x] Add media query in style.css for mobile view to set hero image width to 100%
