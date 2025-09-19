@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sri Venkateswara Crackers – Your one-stop destination for quality and safe crackers." />
+    <title>Sri Venkateswara Crackers</title>
+
+    <!-- Fonts (optional modern look) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- App logic -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <div>
+          <div class="logo">Sri Venkateswara Crackers</div>
+          <div class="contact-info" style="color: #cbd5e1; font-size: 0.9rem; margin-top: 4px;">
+            Near konangipalli, Pachikapallam, Tirupathi Road<br />
+            Mobile: +91 9177814241, 6303006051
+          </div>
+        </div>
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="#" class="nav-link active" data-route="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-route="products">Products</a></li>
+            <li><a href="#" class="nav-link" data-route="cart">Cart (<span id="cartCount">0</span>)</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section active" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <!-- Left: Text content -->
+          <div class="hero-left">
+            <p class="proprietor-name" style="color: #e4f408; font-size: 1.5rem;font-weight: bold; margin-bottom: 0.5rem;">Proprietor name - P. NAGOOR</p>
+            <h1 id="hero-title">Sri Venkateswara Crackers</h1>
+            <p class="subtitle">Your one-stop destination for quality and safe crackers.</p>
+            <a href="#" data-route="products" class="btn btn-accent route-link">View Products</a>
+          </div>
+
+          <!-- Image -->
+          <img
+            src="Picsart_25-09-16_22-41-30-148~2.png"
+            alt="Colorful fireworks lighting up the night sky"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section id="products" class="section" aria-label="Products">
+        <div class="search-wrap">
+          <div class="container">
+            <label for="search" class="sr-only">Search products</label>
+            <input id="search" class="search" type="text" placeholder="Search products..." />
+          </div>
+        </div>
+
+        <div class="container">
+          <section class="products" id="productGrid" aria-label="Products Grid">
+            <!-- Rendered by JS -->
+          </section>
+        </div>
+
+        <!-- Floating Go to Cart button (visible/enabled after first add to cart) -->
+        <button id="goToCartFab" class="fab" type="button" aria-label="Go to Cart" disabled>Go to Cart</button>
+      </section>
+
+      <!-- Cart Section -->
+      <section id="cart" class="section" aria-label="Cart">
+        <div class="container">
+          <div id="cartEmpty" class="muted">Your cart is empty.</div>
+          <div class="cart-table-wrap">
+            <table id="cartTable" class="cart-table" aria-describedby="cartSummary">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Total</th>
+                  <th scope="col" class="hide-sm">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Rows rendered by JS -->
+              </tbody>
+            </table>
+          </div>
+          <div class="cart-summary" id="cartSummary">
+            <div class="summary-row">
+              <strong>Grand Total: <span id="grandTotal">₹0</span></strong>
+            </div>
+            <div class="summary-actions">
+              <button id="printBtn" class="btn btn-accent">Print</button>
+              <button id="clearCartBtn" class="btn btn-accent" style="margin-left: 0.5rem;">Clear Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Print-only container populated before printing -->
+        <div id="printArea" class="print-only"></div>
+      </section>
+    </main>
+  </body>
+</html>
