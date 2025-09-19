@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products • Sri Venkateswara Crackers</title>
+    <meta name="description" content="Browse and add fireworks products to your cart at Sri Venkateswara Crackers." />
+       <script src="app.js" defer></script>
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-inner">
+      <div class="logo">Sri Venkateswara Crackers</div>
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" target="_blank" rel="noopener noreferrer">Home</a></li>
+            <li><a href="products.html" class="nav-link active" target="_blank" rel="noopener noreferrer">Products</a></li>
+            <li><a href="index.html#cart" class="nav-link" target="_blank" rel="noopener noreferrer">Cart</a></li>
+            <li><a href="index.html#contact" class="nav-link" target="_blank" rel="noopener noreferrer">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="cart" aria-label="Cart" title="Cart">
+          <span class="cart-icon" aria-hidden="true">🛒</span>
+          <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Search -->
+    <section class="search-wrap">
+      <div class="container">
+        <label for="search" class="sr-only">Search products</label>
+        <input id="search" class="search" type="text" placeholder="Search products..." />
+      </div>
+    </section>
+
+   <!-- Products Grid -->
+    <main class="container">
+      <section class="products" id="products" aria-label="Products">
+         Example product cards; replace placeholders as needed 
+        <article class="card" data-name="Sparklers">
+          <div class="card-thumb">Sparklers</div>
+          <div class="card-body">
+            <h3 class="title">Sparklers</h3>
+            <div class="controls">
+              <input type="number" class="qty" min="1" value="1" aria-label="Quantity for Sparklers" />
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-name="Flower Pots">
+          <div class="card-thumb">Flower Pots</div>
+          <div class="card-body">
+            <h3 class="title">Flower Pots</h3>
+            <div class="controls">
+              <input type="number" class="qty" min="1" value="1" aria-label="Quantity for Flower Pots" />
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-name="Ground Chakkars">
+          <div class="card-thumb">Ground Chakkars</div>
+          <div class="card-body">
+            <h3 class="title">Ground Chakkars</h3>
+            <div class="controls">
+              <input type="number" class="qty" min="1" value="1" aria-label="Quantity for Ground Chakkars" />
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-name="Roman Candles">
+          <div class="card-thumb">Roman Candles</div>
+          <div class="card-body">
+            <h3 class="title">Roman Candles</h3>
+            <div class="controls">
+              <input type="number" class="qty" min="1" value="1" aria-label="Quantity for Roman Candles" />
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-name="Sky Shots">
+          <div class="card-thumb">Sky Shots</div>
+          <div class="card-body">
+            <h3 class="title">Sky Shots</h3>
+            <div class="controls">
+              <input type="number" class="qty" min="1" value="1" aria-label="Quantity for Sky Shots" />
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-name="Bombs">
+          <div class="card-thumb">Bombs</div>
+          <div class="card-body">
+            <h3 class="title">Bombs</h3>
+            <div class="controls">
+              <input type="number" class="qty" min="1" value="1" aria-label="Quantity for Bombs" />
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-name="4-bomb">
+          <div class="card-thumb">4"bomb</div>
+          <div class="card-body">
+            <h3 class="title">4"bomb</h3>
+            <div class="controls">
+              <input type="number" class="qty" min="1" value="1" aria-label="Quantity for 4-bomb"/>
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+
+
+
+
+
+
+
+
+
+      </section>
+    </main>
+
+ 
+  </body>
+</html>
