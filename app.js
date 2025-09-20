@@ -91,6 +91,24 @@
     { id: '90nats', name: '90 watts', price:400 },
     { id: '40-item-gift box', name: '40-item -gift-box', price:500 },
     { id: '50 items-gift-box', name: '50-items-gift-box', price:620 },
+    {id:'7cm-electric',name:'7cm electric',price:60},
+    {id:'7cm-colour',name:'7cm color',price:60},
+    {id:'7cm red',name:'7cm red',price:65},
+    {id:'f/p ashoka',name:'Flowerpot  Ashoka',price:300},
+    {id:'cylinder ',name:'cylinder',price:600},
+    {id:'car',name:'car',price:900},
+    {id:'75cm-parklos',name:'75cm-parklos',price:900},
+    {id:'100 wala',name:'100 wala',price:150},
+    {id:'thrilden bomb',name:'thrilden bomb',price:800},
+    {id:'5-hulk',name:'5&quot;hulk',price:150},
+    {id:'100dlx',name:'100 delux',price:450},
+    {id:'50 dlx',name:'50 delux',price:270},
+    {id:'spinner dlx',name:'spinner delux',price:400},
+    {id:'14p',name:'14p',price:350},
+    {id:'34p',name:'34p',price:400},
+    {id:'28hint',name:'28 hint',price:40},
+   
+    
    
   ];
 
