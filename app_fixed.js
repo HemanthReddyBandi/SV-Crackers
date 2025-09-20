@@ -532,7 +532,7 @@
             margin: 0 0 5px 0;
             font-size: 24px;
             font-weight: bold;
-            color: #f59300f2;
+            color: #e5e90bff;
           }
           .inv-meta {
             margin: 2px 0;
