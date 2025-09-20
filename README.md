@@ -23,6 +23,3 @@ It was designed to be clean, simple, and easy to deploy as a static site on [Ren
 - **JavaScript (Vanilla)** – Interactivity (cart, wishlist, print as PDF)  
 
 ---
-
-## 📂 Folder Structure
-
