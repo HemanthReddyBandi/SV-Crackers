@@ -482,157 +482,72 @@
 
   // ---------- Print ----------
   function buildPrintHTML() {
-    const rows = cart.map(i => `
-      <tr>
-        <td class="col-item">${i.name}</td>
-        <td class="col-qty">${i.qty}</td>
-        <td class="col-price">${currency(i.price)}</td>
-        <td class="col-total">${currency(i.price * i.qty)}</td>
-      </tr>
-    `).join('');
-
     const grandTotal = calcGrandTotal();
     const discountAmount = calculateDiscount(grandTotal);
     const finalTotal = grandTotal - discountAmount;
+    const dateStr = new Date().toLocaleDateString('en-IN', { day: '2-digit', month: '2-digit', year: 'numeric' });
 
-    const total = currency(grandTotal);
-    const discountRow = discountAmount > 0 ? `
-      <tr>
-        <td colspan="3" class="grand-label">Discount</td>
-        <td class="grand-value">${currency(discountAmount)}</td>
-      </tr>
-    ` : '';
+    let receipt = `SRI VENKATESWARA CRACKERS
+Proprietor: P. NAGOOR
+Near konangipalli, Pachikapallam,
+Tirupathi Road
+Mobile: +91 9177814241, 6303006051
+Date: ${dateStr}
 
-    const finalTotalRow = `
-      <tr>
-        <td colspan="3" class="grand-label">Final Total</td>
-        <td class="grand-value">${currency(finalTotal)}</td>
-      </tr>
-    `;
+`;
+
+    cart.forEach(item => {
+      const desc = item.name.length > 25 ? item.name.substring(0, 25) + '...' : item.name;
+      receipt += `${item.qty} x ${desc} @ ₹${item.price} = ₹${item.price * item.qty}\n`;
+    });
+
+    receipt += `
+Subtotal: ₹${grandTotal}
+`;
+
+    if (discountAmount > 0) {
+      receipt += `Discount: ₹${discountAmount}\n`;
+    }
+
+    receipt += `Final Total: ₹${finalTotal}
+
+Thank You and Visit Again! 🎆
+`;
 
     return `
-      <div class="inv">
+      <div class="receipt">
         <style>
-          .inv {
-            font-family: Arial, sans-serif;
+          .receipt {
+            font-family: 'Courier New', monospace;
+            font-size: 15px;
+            line-height: 1.4;
             color: #000;
-            max-width: 100%;
-            margin: 0;
-            padding: 20px;
+            white-space: pre-wrap;
+            max-width: 58mm;
+            margin: 0 auto;
+            padding: 5mm;
           }
-          .inv-header {
-            text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #0b0b0aff;
-            padding-bottom: 10px;
-          }
-          .inv-title {
-            margin: 0 0 5px 0;
-            font-size: 24px;
-            font-weight: bold;
-            color: #f59300f2;
-          }
-          .inv-meta {
-            margin: 2px 0;
-            font-size: 12px;
-            color: #333;
-          }
-          .inv-date {
-            margin-top: 10px;
-            font-size: 11px;
-            color: #666;
-          }
-
-          .inv-table {
-            width: 100%;
-            border-collapse: collapse;
-            table-layout: fixed;
-            margin: 20px 0;
-          }
-          .inv-table th, .inv-table td {
-            border: 1px solid #000;
-            padding: 8px;
-            text-align: left;
-            font-size: 12px;
-          }
-          .inv-table thead th {
-            background-color: #f5f5f5;
-            font-weight: bold;
-            text-align: center;
-          }
-
-          .col-item { width: 50%; }
-          .col-qty { width: 15%; text-align: center; }
-          .col-price, .col-total { width: 17.5%; text-align: right; }
-
-          tfoot td {
-            border-top: 2px solid #000;
-            font-weight: bold;
-            background-color: #f9f9f9;
-          }
-          .grand-label { text-align: right; }
-          .grand-value { text-align: right; }
-
           @page {
+            size: 58mm auto;
             margin: 0;
-            size: A4;
           }
-
           @media print {
             body * {
               visibility: hidden;
             }
-            .inv, .inv * {
+            .receipt, .receipt * {
               visibility: visible;
             }
-            .inv {
+            .receipt {
               position: absolute;
               left: 0;
               top: 0;
-              padding: 10mm;
-              width: 100%;
-              box-sizing: border-box;
+              width: 58mm;
+              padding: 2mm 2mm 2mm 5mm;
             }
-            .inv-header { margin-bottom: 10px; }
           }
         </style>
-
-        <div class="inv-header">
-          <h1 class="inv-title">SRI VENKATESWARA CRACKERS</h1>
-          <div class="inv-meta">Proprietor: P. NAGOOR</div>
-          <div class="inv-meta">Near konangipalli, Pachikapallam, Tirupathi Road</div>
-          <div class="inv-meta">Mobile: +91 9177814241, 6303006051</div>
-          <div class="inv-date">Date: ${new Date().toLocaleDateString('en-IN', { day: '2-digit', month: '2-digit', year: 'numeric' })}</div>
-        </div>
-
-        <table class="inv-table" aria-label="Invoice items">
-          <thead>
-            <tr>
-              <th class="col-item">Item Description</th>
-              <th class="col-qty">Qty</th>
-              <th class="col-price">Rate</th>
-              <th class="col-total">Amount</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${rows}
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="3" class="grand-label">Subtotal</td>
-              <td class="grand-value">${total}</td>
-            </tr>
-            ${discountRow}
-            <tr>
-              <td colspan="3" class="grand-label">Final Total</td>
-              <td class="grand-value">${currency(finalTotal)}</td>
-            </tr>
-          </tfoot>
-        </table>
-
-        <div style="text-align: center; margin-top: 20px; font-size: 10px; color: #666;">
-          Thank you and visit again!🫂
-        </div>
+        <pre>${receipt}</pre>
       </div>
     `;
   }
@@ -741,3 +656,4 @@
   // Default route = home
   showSection('home');
 })();
+

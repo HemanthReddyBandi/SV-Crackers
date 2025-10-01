@@ -14,6 +14,9 @@
     <!-- Site styles -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- jsPDF library for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+
     <!-- App logic -->
     <script src="app.js" defer></script>
   </head>
@@ -124,6 +127,7 @@
           <div class="summary-actions">
             <button id="printBtn" class="btn btn-accent">Print</button>
             <button id="clearCartBtn" class="btn btn-accent" style="margin-left: 0.5rem;">Clear Cart</button>
+            <button id="printPosReceiptBtn" class="btn btn-accent" style="margin-left: 0.5rem;">Print POS Receipt</button>
           </div>
         </div>
 

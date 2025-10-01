@@ -278,7 +278,7 @@ header:has(+ main #products.active) .navbar {
 /* Print styles */
 .print-only { display: none; }
 @media print {
-  body { background: white; color: black; font-family: Inter, Arial, sans-serif; }
+  body { width: 58mm; background: white; color: black; font-family: Inter, Arial, sans-serif; }
   .navbar, .section:not(#cart), .summary-actions, .search-wrap { display: none !important; }
   #cart { display: block; opacity: 1; transform: none; }
   #printArea { display: block; }
@@ -317,7 +317,8 @@ header:has(+ main #products.active) .navbar {
   }
 
   @page {
-    margin: 16mm;
+    size: 58mm auto;
+    margin: 2mm;
     /* Hide browser's default URL display at bottom of page */
     @bottom-center { content: none; }
     @bottom-left { content: none; }
