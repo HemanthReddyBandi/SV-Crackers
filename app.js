@@ -491,8 +491,10 @@
 Proprietor: P. NAGOOR
 Near konangipalli, Pachikapallam,
 Tirupathi Road
-Mobile: +91 9177814241, 6303006051
+Mobile: +91 9177814241,
+        +91 6303006051
 Date: ${dateStr}
+--------------------------------------------------
 
 `;
 
@@ -502,6 +504,7 @@ Date: ${dateStr}
     });
 
     receipt += `
+--------------------------------------------------
 Subtotal: ₹${grandTotal}
 `;
 
@@ -543,7 +546,8 @@ Thank You and Visit Again! 🎆
               left: 0;
               top: 0;
               width: 58mm;
-              padding: 2mm 2mm 2mm 5mm;
+              padding: 2mm 2mm 2mm 10mm;
+            
             }
           }
         </style>
