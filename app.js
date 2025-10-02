@@ -12,40 +12,40 @@
     { id: 'kumki', name: 'kumki', price: 400 },
     { id: 'jallikattu', name: 'jallikattu', price:500 },
     { id: 'bahubhali', name: 'bahubhali', price:600 },
-    { id: 'lion dk', name: 'lion delux', price: 650},
+    { id: 'lion dk', name: 'lion dlx', price: 650},
     { id: 'lion gun', name: 'lion hum', price: 800},
     { id: '6 -dlx', name: '6"delux', price:500 },
-    { id: '1/4 p-bomb', name: '¼paper bomb', price:150 },
-    { id: '1/2 p-bomb', name: '½paper bomb', price:250 },
-    { id: '1kg-p-bomb', name: '1kg paper bomb', price:450 },
+    { id: '1/4 p-bomb', name: '¼kg.p.bomb', price:150 },
+    { id: '1/2 p-bomb', name: '½kg.p.bomb', price:250 },
+    { id: '1kg-p-bomb', name: '1kg.p.bomb', price:450 },
     { id: 'color bomb', name: 'color bomb', price:90 },
-    { id: 'f-p drig', name: 'flower pot big', price:200 },
-    { id: 'f-p-spl', name: 'flower pot special', price:300 },
-    { id: 'f-p-dlx', name: 'flower pot delux(5)', price:500 },
-    { id: 'f-p-c.kotti', name: 'flower pot colour kotti', price:450 },
-    { id: 'f-p s.dlx', name: 'flower pot special delux ', price:250 },
-    { id: 'c.kotti dlx', name: 'colour kotti delux', price:450 },
-    { id: 'g.ch.ashoka', name: 'ground chakra ashoka', price:150 },
-    { id: 'g.ch.dlx', name: 'ground chakra delux', price:250 },
-    { id: 'g.ch.spl', name: 'ground chakra special', price:170 },
-    { id: 'g.ch.drig', name: 'ground chakra big', price:150 },
+    { id: 'f-p drig', name: 'F/P big', price:200 },
+    { id: 'f-p-spl', name: 'F/P spL', price:300 },
+    { id: 'f-p-dlx', name: 'F/P dLX(5)', price:500 },
+    { id: 'f-p-c.kotti', name: 'F/P clr kotti', price:450 },
+    { id: 'f-p s.dlx', name: 'F/P spl dlx ', price:250 },
+    { id: 'c.kotti dlx', name: 'F/P kotti dlx', price:450 },
+    { id: 'g.ch.ashoka', name: 'F/P ch ashoka', price:150 },
+    { id: 'g.ch.dlx', name: 'G.CH.dlx', price:250 },
+    { id: 'g.ch.spl', name: 'G.CH.spl', price:170 },
+    { id: 'g.ch.drig', name: 'G.CH.big', price:150 },
     { id: '1k', name: '1k', price:400 },
     { id: '2k', name: '2k', price:1000 },
     { id: '5k', name: '5k', price: 1500},
     { id: 'fox star', name: 'fox star', price:350 },
-    { id: '2.s.r', name: '2. sound rocket', price:200 },
-    { id: '3.s.r', name: '3.sound rocket', price:250 },
-    { id: 'L.R', name: 'Lunki Rocket', price: 180},
+    { id: '2.s.r', name: '2.sound rKt', price:200 },
+    { id: '3.s.r', name: '3.sound rkt', price:250 },
+    { id: 'L.R', name: 'Lunki Rkt', price: 180},
     { id: '7-pencil', name: '7"pencil', price:90 },
     { id: '12-pencil', name: '12"pencil', price:150 },
-    { id: '1 -1/2.t.star', name: '1½Twinkling star', price:70 },
-    { id: '4-t.star', name: '4"twinkling star', price:150 },
-    { id: 'c.smoke', name: 'colour smoke', price:300 },
+    { id: '1 -1/2.t.star', name: '1½Twkg star', price:70 },
+    { id: '4-t.star', name: '4"Twkg star', price:150 },
+    { id: 'c.smoke', name: 'clr smoke', price:300 },
     { id: 'b.stone', name: 'big stone', price: 30},
     { id: '4x4 wheel', name: '4x4 wheel ', price:350 },
     { id: 'disco wheel ', name: 'disco wheel ', price: 300 },
-    { id: 'r.prigihi', name: 'Red brigile', price:70 },
-    { id: 'stripped prigihi', name: 'stripped brigile', price: 75 },
+    { id: 'r.prigihi', name: 'R.brigile', price:70 },
+    { id: 'stripped prigihi', name: 'str brigile', price: 75 },
     { id: '10m rle', name: '10m blue', price:70 },
     { id: '10m cals', name: '10m colour', price:90 },
     { id: '10m green', name: '10m green', price:80 },
@@ -56,7 +56,7 @@
     { id: '30m cals', name: '30m colour', price: 110},
     { id: '50m ble', name: '50m blue', price:300 },
     { id: '50m cals', name: '50m colour', price:330 },
-    { id: 'pogo shower', name: 'pogo shower', price:450 },
+    { id: 'pogo shower', name: 'pogo SWS', price:450 },
     { id: '30 shots', name: '30 shots', price:600 },
     { id: '60 shots', name: '60 shots', price:1300 },
     { id: '12 shots', name: '12 shots', price:300 },
@@ -66,7 +66,7 @@
     { id: '3-1/2 fay', name: '3½ fancy', price:450 },
     { id: 'chotta fay', name: 'chotta fancy', price:150 },
     { id: '3 pcs fay', name: '3 pcs fancy', price:500 },
-    { id: 'white horse', name: 'white horse', price:450 },
+    { id: 'white horse', name: 'W.horse', price:450 },
     { id: '2-3/4 fay', name: '2¾fancy', price:1000 },
     { id: '25 shots', name: '25 shots', price:450 },
     { id: 'lender 3 in 1', name: 'wonder 3 in 1', price:500 },
@@ -75,9 +75,9 @@
 
 
 
-    { id: 'live chakkar', name: 'white chakkara ', price:300 },
+    { id: 'live chakkar', name: 'W.chakkara ', price:300 },
     { id: 'kittar', name: 'guitar ', price:500 },
-    { id: 'queen shower', name: 'queen showers(2pcs)', price:450 },
+    { id: 'queen shower', name: 'Queen SWS(2ps)', price:450 },
     { id: 'm.bank', name: 'money bank', price:360 },
     { id: 'pentagon', name: 'pentagon', price:400 },
     { id: 'peacock', name: 'peacock', price:450 },
@@ -92,16 +92,16 @@
     {id:'7cm-electric',name:'7cm electric',price:60},
     {id:'7cm-colour',name:'7cm color',price:60},
     {id:'7cm red',name:'7cm red',price:65},
-    {id:'f/p ashoka',name:'Flowerpot  Ashoka',price:300},
+    {id:'f/p ashoka',name:'F/P Ashoka',price:300},
     {id:'cylinder ',name:'cylinder',price:600},
     {id:'car',name:'car',price:900},
-    {id:'75cm-parklos',name:'75cm-parklers',price:900},
+    {id:'75cm-parklos',name:'75cm-pklrs',price:900},
     {id:'100 wala',name:'100 wala',price:150},
     {id:'thrilden bomb',name:'thriller bomb',price:800},
     {id:'5-hulk',name:'5"hulk',price:150},
     {id:'100dlx',name:'100 delux',price:450},
     {id:'50 dlx',name:'50 delux',price:270},
-    {id:'spinner dlx',name:'spinner delux',price:400},
+    {id:'spinner dlx',name:'spinner dlx',price:400},
     {id:'1up',name:'1 up',price:350},
     {id:'3up',name:'3 up',price:400},
     {id:'28hint',name:'28 hint',price:40},
@@ -495,25 +495,48 @@ Mobile: +91 9177814241,
         +91 6303006051
 Date: ${dateStr}
 --------------------------------------------------
-
+Item             Qty Rate Amount
+--------------------------------------------------
 `;
 
+    // Helper to format item lines with fixed columns
+    function formatItem(name, qty, price, total) {
+      const maxNameLen = 15;
+      const qtyLen = 3;
+      const rateLen = 5;
+      const amountLen = 7;
+      let lines = [];
+      // Split name into chunks of maxNameLen
+      for (let i = 0; i < name.length; i += maxNameLen) {
+        const chunk = name.substr(i, maxNameLen);
+        if (i === 0) {
+          // First line: chunk + qty + rate + amount
+          const qtyStr = qty.toString().padStart(qtyLen);
+          const rateStr = currency(price).padStart(rateLen);
+          const amountStr = currency(total).padStart(amountLen);
+          lines.push(chunk.padEnd(maxNameLen) + qtyStr + rateStr + amountStr);
+        } else {
+          // Subsequent lines: chunk only, padded
+          lines.push(chunk.padEnd(maxNameLen + qtyLen + rateLen + amountLen));
+        }
+      }
+      return lines.join('\n');
+    }
+
     cart.forEach(item => {
-      const desc = item.name.length > 25 ? item.name.substring(0, 25) + '...' : item.name;
-      receipt += `${item.qty} x ${desc} @ ₹${item.price} = ₹${item.price * item.qty}\n`;
+      receipt += formatItem(item.name, item.qty, item.price, item.price * item.qty) + '\n';
     });
 
     receipt += `
 --------------------------------------------------
-Subtotal: ₹${grandTotal}
+Subtotal: ${currency(grandTotal).padStart(7)}
 `;
 
     if (discountAmount > 0) {
-      receipt += `Discount: ₹${discountAmount}\n`;
+      receipt += `Discount: ${currency(discountAmount).padStart(7)}\n`;
     }
 
-    receipt += `Final Total: ₹${finalTotal}
-
+    receipt += `Final Total: ${currency(finalTotal).padStart(7)}
 Thank You and Visit Again! 🎆
 `;
 
@@ -541,14 +564,14 @@ Thank You and Visit Again! 🎆
             .receipt, .receipt * {
               visibility: visible;
             }
-            .receipt {
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 58mm;
-              padding: 2mm 2mm 2mm 10mm;
-            
-            }
+          .receipt {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 58mm;
+            padding: 0 2mm 0 7mm;
+
+          }
           }
         </style>
         <pre>${receipt}</pre>
