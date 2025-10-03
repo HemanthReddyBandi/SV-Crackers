@@ -25,7 +25,7 @@
     { id: 'f-p-c.kotti', name: 'F/P clr kotti', price:450 },
     { id: 'f-p s.dlx', name: 'F/P spl dlx ', price:250 },
     { id: 'c.kotti dlx', name: 'F/P kotti dlx', price:450 },
-    { id: 'g.ch.ashoka', name: 'F/P ch ashoka', price:150 },
+    { id: 'g.ch.ashoka', name: 'G.ch ashoka', price:150 },
     { id: 'g.ch.dlx', name: 'G.CH.dlx', price:250 },
     { id: 'g.ch.spl', name: 'G.CH.spl', price:170 },
     { id: 'g.ch.drig', name: 'G.CH.big', price:150 },
@@ -71,9 +71,6 @@
     { id: '25 shots', name: '25 shots', price:450 },
     { id: 'lender 3 in 1', name: 'wonder 3 in 1', price:500 },
     //redefine
-
-
-
 
     { id: 'live chakkar', name: 'W.chakkara ', price:300 },
     { id: 'kittar', name: 'guitar ', price:500 },
