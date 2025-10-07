@@ -2,7 +2,7 @@
 
 Welcome to **SV Crackers**, my very first freelancing project!  
 This is a fully static,Desktop admin responsive website created to showcase a fireworks store online.  
-It was designed to be clean, simple, and easy to deploy as a static site on [[Render](https://render.com). ](https://sv-crackers.onrender.com) 
+It was designed to be clean, simple, and easy to deploy as a static site on [Render(https://render.com). ][RENDER (https://sv-crackers.onrender.com)] 
 
 ---
 
