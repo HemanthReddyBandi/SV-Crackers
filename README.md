@@ -11,7 +11,7 @@ It was designed to be clean, simple, and easy to deploy as a static site on [SV 
 - **Static site only** – no backend required.  
 - Organized with multiple pages:  
   - 🏠 Home Page – Welcoming banner with proprietor name & photo.  
-  - 🎆 Products Page – Categories like shots, types of crackers, with "Add to Cart" and "Wishlist" options.   
+  - 🎆 Products Page – Categories like shots, types of crackers, with "Add to Cart" options.   
   - 🛒 Cart Page – Shows selected items with total price and a "Print as PDF" option.  
 
 ---
