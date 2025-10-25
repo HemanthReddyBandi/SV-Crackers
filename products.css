@@ -154,6 +154,16 @@ img { max-width: 100%;
 
 .btn:hover { filter: brightness(0.98); transition:transform .15s ease, box-shadow .2s ease; }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255,255,255,0.8);
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
 /* Accessibility */
 :focus-visible { outline: 2px solid #16a34a;
    outline-offset: 2px; }

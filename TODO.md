@@ -1,3 +1,5 @@
-- [x] Modify @page size from 58mm auto to 58mm in buildPrintHTML CSS
-- [x] Change .receipt padding to 2mm 2mm 2mm 7mm for 2mm top and bottom gaps
-- [x] Add page-break properties to .receipt to avoid artificial page breaks
+- [x] Add footer HTML to index.html
+- [x] Add footer HTML to products.html
+- [x] Add footer HTML to index_fixed.html
+- [x] Add footer CSS to style.css
+- [x] Add footer CSS to products.css
